@@ -57,6 +57,7 @@ void insertMap(HashMap * map, char * key, void * value) {
 }
 
 void enlarge(HashMap * map) {
+  
     enlarge_called = 1; //no borrar (testing purposes)
 
 
@@ -73,7 +74,17 @@ HashMap * createMap(long capacity) {
   return newMap;
 }
 
-void eraseMap(HashMap * map,  char * key) {    
+void eraseMap(HashMap * map,  char * key) { 
+  long pos= hash(key, map->capacity);
+  while(map->buckets[pos]!=NULL && map->buckets[pos]->key != NULL){
+    if(is_equal(map->buckets[pos]->key, key)){
+      free(map->buckets[pos]);
+      map->buckets[pos]= NULL;
+      map->size--;
+      return;
+    }
+    pos= (pos+1) %map->capacity;
+  }
 
 
 }
