@@ -26,3 +26,9 @@ hashmap.c:48:21: error: expected ‘;’ before ‘}’ token
 cc1: all warnings being treated as errors
 Compilation failed
 c7a4fa7
+Thu 25 Apr 2024 09:38:08 PM UTC: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  1|5
+total_score: 10/70
+e735a7d
