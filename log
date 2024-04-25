@@ -67,3 +67,19 @@ Thu 25 Apr 2024 09:54:30 PM UTC:
  tests:  5|4
 total_score: 30/70
 69d6865
+Thu 25 Apr 2024 10:03:15 PM UTC: 
+ hashmap.c | 15 ++++++++++++++-
+ 1 file changed, 14 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:65:35: error: request for member ‘new_capacity’ in something not a structure or union
+   65 |       long new_pos= hash(temp->key. new_capacity);
+      |                                   ^
+hashmap.c:65:21: error: too few arguments to function ‘hash’
+   65 |       long new_pos= hash(temp->key. new_capacity);
+      |                     ^~~~
+hashmap.c:26:6: note: declared here
+   26 | long hash( char * key, long capacity) {
+      |      ^~~~
+Compilation failed
+690f0f4
