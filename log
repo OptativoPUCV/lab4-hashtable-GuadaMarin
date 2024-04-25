@@ -1,0 +1,28 @@
+Thu 25 Apr 2024 09:37:43 PM UTC: 
+ hashmap.c | 15 ++++++++++++++-
+ 1 file changed, 14 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:44:44: error: expected statement before ‘)’ token
+   44 |   if(map==NULL || key==NULL || value==NULL)) return;
+      |                                            ^
+hashmap.c:44:3: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   44 |   if(map==NULL || key==NULL || value==NULL)) return;
+      |   ^~
+hashmap.c:44:46: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   44 |   if(map==NULL || key==NULL || value==NULL)) return;
+      |                                              ^~~~~~
+hashmap.c:48:17: error: invalid operands to binary % (have ‘long int’ and ‘HashMap *’ {aka ‘struct HashMap *’})
+   48 |     pos= (pos+1)%map
+      |          ~~~~~~~^
+      |              |
+      |              long int
+hashmap.c:48:21: error: expected ‘;’ before ‘}’ token
+   48 |     pos= (pos+1)%map
+      |                     ^
+      |                     ;
+   49 |   }
+      |   ~                  
+cc1: all warnings being treated as errors
+Compilation failed
+c7a4fa7
