@@ -99,3 +99,9 @@ hashmap.c:112:11: error: expected expression before ‘)’ token
       |           ^
 Compilation failed
 b33c58d
+Fri 26 Apr 2024 04:44:14 PM UTC: 
+ hashmap.c | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+ tests:  9|2
+total_score: 50/70
+a4e2331
