@@ -89,3 +89,13 @@ Thu 25 Apr 2024 10:03:49 PM UTC:
  tests:  6|3
 total_score: 40/70
 1ee6b18
+Fri 26 Apr 2024 04:42:25 PM UTC: 
+ hashmap.c | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+In file included from test.c:4:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:112:11: error: expected expression before ‘)’ token
+  112 |     pos= ()
+      |           ^
+Compilation failed
+b33c58d
