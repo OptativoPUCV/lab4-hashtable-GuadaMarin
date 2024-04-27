@@ -147,3 +147,9 @@ hashmap.c:100:3: error: expected expression before ‘}’ token
       |   ^
 Compilation failed
 b1b1425
+Sat 27 Apr 2024 08:19:51 PM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  14|1
+total_score: 60/70
+8699845
