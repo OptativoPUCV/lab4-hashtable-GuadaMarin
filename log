@@ -133,3 +133,17 @@ Sat 27 Apr 2024 03:13:20 PM UTC:
  tests:  14|1
 total_score: 60/70
 b345e58
+Sat 27 Apr 2024 08:19:40 PM UTC: 
+ hashmap.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘eraseMap’:
+hashmap.c:99:24: error: ‘next’ undeclared (first use in this function)
+   99 |     while(map->buckets[next] != NULL)
+      |                        ^~~~
+hashmap.c:99:24: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c:100:3: error: expected expression before ‘}’ token
+  100 |   }
+      |   ^
+Compilation failed
+b1b1425
