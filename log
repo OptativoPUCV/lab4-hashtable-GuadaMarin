@@ -105,3 +105,13 @@ Fri 26 Apr 2024 04:44:14 PM UTC:
  tests:  9|2
 total_score: 50/70
 a4e2331
+Sat 27 Apr 2024 02:50:35 PM UTC: 
+ hashmap.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:4:
+hashmap.c: In function ‘firstMap’:
+hashmap.c:121:5: error: expected expression before ‘}’ token
+  121 |     }
+      |     ^
+Compilation failed
+997500c

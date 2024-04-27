@@ -115,6 +115,10 @@ Pair * searchMap(HashMap * map,  char * key) {
 }
 
 Pair * firstMap(HashMap * map) {
+  for (map-> current =0; map-> current < map->capacity; map->current++)
+    {
+      if (map-> buckets[map->current ])
+    }
   
 
     return NULL;
