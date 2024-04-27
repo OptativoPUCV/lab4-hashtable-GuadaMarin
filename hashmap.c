@@ -115,11 +115,12 @@ Pair * searchMap(HashMap * map,  char * key) {
 }
 
 Pair * firstMap(HashMap * map) {
-  for (map-> current =0; map-> current < map->capacity; map->current++)
-    {
-      if (map-> buckets[map->current ])
+  for (long i=0; i<  map->capacity; i++){
+    if(map->buckets[i]!=NULL && map->buckets[i]->key != NULL){
+      map->current= i;
+      return map->buckets[i];
     }
-  
+  }
 
     return NULL;
 }
